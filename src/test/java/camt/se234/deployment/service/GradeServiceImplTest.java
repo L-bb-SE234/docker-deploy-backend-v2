@@ -9,7 +9,7 @@ public class GradeServiceImplTest {
     @Test
     public void testGetGrade(){
         GradeServiceImpl gradeService = new GradeServiceImpl();
-        assertThat(gradeService.getGrade(100),is("A"));
+        assertThat(gradeService.getGrade(80),is("A"));
         assertThat(gradeService.getGrade(79),is("A"));
         assertThat(gradeService.getGrade(78.9),is("B"));
         assertThat(gradeService.getGrade(75),is("B"));
